@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.5 (453172)"/><meta name="author" content="charles@charleshurt.com"/><meta name="created" content="2016-04-04 06:59:00 +0000"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2016-04-05 00:31:59 +0000"/><title>4-3-16</title></head><body>
+<div><span style="font-size: 18px;"><b>Getting started as a full-stack JavaScript developer. </b></span></div>
+<div><span style="font-size: 18px;"><b>Part 1: Development environment</b></span></div>
+<div><br/></div>
+<div><b>DEVELOPMENT PLATFORM</b></div>
+<div>Before embarking on this voyage there are a couple of things to know: First, A good MacBook is your best friend.  Yes there are still developers using PC's but MacBooks are most popular.  I switched when OS/X came out-that is, when Apple started using Linux as the foundation of their OS. I can't say enough about the stability that comes with OS maturity.  Yes, MacBooks are more expensive, and yes Windows is adding Bash command line tool,  but there is no substitute for the the reliable performance of a good MacBook.  Besides that, you can always run Windows in a virtual machine.</div>
+<div><br/></div>
+<div><b>BROWSERS</b></div>
+<div>I use Chrome because it has a rich set of tools built into DevTools.  </div>
+<div><br/></div>
+<div><b>EDITORS</b></div>
+<div>Generally, developers tend to polarize on the question of which editor is best.  On one side are developers that like to become power-users and rely on an extensive set of memorized hot keys.  VIM is a common choice for this type of person.   On the other hand, there are easier to use WYSIWYG editors, that allow mouse commands to be used more easily.  This is the kind of editor I recommend. Two common choices are Sublime and Atom.  Both are similar, but Atom is free and has an engaged developer community.  The last time I checked on Sublime,  active development had slowed considerably.</div>
+<div><br/></div>
+<div><b>INSTALLING ATOM</b></div>
+<div>Installation docs</div>
+<div><span style="font-family: 'Courier New';">http://flight-manual.atom.io/getting-started/sections/installing-atom/</span></div>
+<div><br/></div>
+<div>Download</div>
+<div><span style="font-family: 'Courier New';">https://github.com/atom/atom/releases/latest</span></div>
+<div>Warning: this link will take you to <span style="font-family: 'Courier New';">github</span> where a confusing array of downloadS will appear.  DO NOT PAY ANY ATTENTION TO THIS.  Simply click on the Green "Latest Release Button.</div>
+<div><br/></div>
+<div><b>DOWNLOAD FOLDER</b></div>
+<div>Can't find the download?  Check for the downloads location in your browser preferences/settings.  I use Chrome, which I recommend due the the built-in DevTools, use Chrome/Preferences the search for "downloads"</div>
+<div>  </div>
+<div>Create a tool to easily rotate an image, </div>
+<div>Create a tool to easily rename files</div>
+<div><br/></div>
+<div><b>SETTING ATOM AS DEFAULT</b></div>
+<div>To set Atom as your default editor for .js files, first <i>right click</i> on a .js file in Finder. Next go to the</div>
+<div><i>"Open with"</i> drop down and select Atom. <i> </i>Finally, click on the <i>"Change All"</i> button to make Atom the default editor for all files of type "js".</div>
+<div><br/></div>
+<div>To enable Atom in Bash, From Atom select <span style="font-family: 'Courier New';">Atom/Install Shell Commands</span></div>
+<div><br/></div>
+<div>If, for some reason you want to invoke Atom directly in the shell (or directly invoke any other app for that matter) use the following: <span style="font-family: 'Courier New';">open -a 'Atom' filename</span></div>
+<div><span style="font-family: 'Courier New';"><br/></span></div>
+<div><b>CONFIGURING ATOM WITH EMMET</b></div>
+<div>There are an enormous number of extension packages available for Atom but there is one in particular</div>
+<div>I consider a "must-have": Emmet.  If you have not heard of it, I recommend you investigate it.  Essentially, it is a set of programmable shortcuts for your keystroke. For example, in a file of type <span style="font-family: 'Courier New';"><b>.html,</b></span></div>
+<div>typing "<span style="font-family: 'Courier New';">! + Tab key"</span> Inserts a boilerplate web page.  Typing "<span style="font-family: 'Courier New';">div</span>" expands to "<span style="font-family: 'Courier New';">&lt;div&gt;&lt;/div&gt;</span>".</div>
+<div>Typing <span style="font-family: 'Courier New';">div.myClass&gt;ul&gt;li*3</span> creates the following:</div>
+<div><span style="font-family: 'Courier New';">&lt;div class='myClass'&gt;</span></div>
+<div><span style="font-family: 'Courier New';">  &lt;ul&gt;</span></div>
+<div><span style="font-family: 'Courier New';">    &lt;li&gt;&lt;/li&gt;</span></div>
+<div><span style="font-family: 'Courier New';">    </span><span style="font-family: 'Courier New';">&lt;li&gt;&lt;/li&gt;</span></div>
+<div><span style="font-family: 'Courier New';">    </span><span style="font-family: 'Courier New';">&lt;li&gt;&lt;/li&gt;</span></div>
+<div><span style="font-family: 'Courier New';">  &lt;/ul&gt;</span></div>
+<div><span style="font-family: 'Courier New';">&lt;/div&gt;</span></div>
+<div><br/></div>
+<div>Obviously this is significantly faster then spelling everything out, and it can be refined too. For example,</div>
+<div>lets say you don't  like how the expansion worked, use "<span style="font-family: 'Courier New';">Control - Z</span>" to undo, refine the macro,</div>
+<div>and hit the <span style="font-family: 'Courier New';">tab</span> key a second time to re-expand.  Emmet is customizable and offers too many features to</div>
+<div>enumerate here.</div>
+<div><br/></div>
+<div><b>A WORD OF CAUTION</b></div>
+<div>There are many people writing extension/packages for many destinations and most are free due to</div>
+<div>the open source trend.  However,  free means "no-obligation" which also means checking for credibility is a good thing before downloading extensions and packages of any kind.</div>
+<div><br/></div>
+<div><b>SHOW HIDDEN FILES</b></div>
+<div>During development, you will notice there are numerous hidden files used for configuration,</div>
+<div>and API keys.  To make things easier,  I enable Finder to show them using this Bash command:</div>
+<div><br/></div>
+<div><span style="font-family: 'Courier New';"><strong style="outline: none; box-sizing: border-box; font-weight: 500 !important; color: rgb(68, 68, 68); font-style: normal; font-variant-ligatures: normal; font-variant-position: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">defaults write <span style="outline: none; box-sizing: border-box; font-weight: 400;">com.apple.finder</span> AppleShowAllFiles YES</strong></span></div>
+<div><span style="font-family: 'Courier New';"><span style="background-color: rgb(255, 255, 255);"><span style="color: rgb(68, 68, 68);"><br/></span></span></span></div>
+<div><span style="color: rgb(68, 68, 68);">In order for this to take effect, restart finder using : <span style="font-family: 'Courier New';">killall Finder</span> At the Bash prompt.</span></div>
+<div><span style="color: rgb(68, 68, 68);"><br/></span></div>
+
+</body></html>
